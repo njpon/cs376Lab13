@@ -4,7 +4,11 @@
  * A file that contains the supporting functions for main() in the
  * ~/robots example source for Software Engineering.
  *
+<<<<<<< HEAD
  * @author Tanya L. Crenshaw, Nathan Schmedake, Nathaniel Pon
+=======
+ * @author Tanya L. Crenshaw, Nathan Schmedake, Alex Mak
+>>>>>>> af1049cdcfe7a9cb9451cb6a244c9844101070c1
  * @since August 2013
  *
  */
@@ -16,7 +20,7 @@
  *
  * This function prints the message, "I really love robots!"
  *
- * @returns none 
+ * @returns none
  */
 void robotPrintMessage(void)
 {
@@ -54,16 +58,22 @@ void dalekPrintAscii(void)
   blank = blank +30;
   printf("\n\n"
 	 "I am Dalek, from Dr. Who\n"
+<<<<<<< HEAD
 	 "%s      <----->      \n" 
          "%s     < .   . >     \n"        
          "%s     |   w   |     \n"
+=======
+	 "%s      <----->      \n"
+         "%s     <  (0)  >     \n"
+         "%s     ---------     \n"
+>>>>>>> af1049cdcfe7a9cb9451cb6a244c9844101070c1
          "%s    < ------- >    \n"
          "%s    o         o    \n"
          "%s    o  0  ()  o    \n"
 	 "%s   o           o   \n"
    	 "%s o o o o o o o o o \n"
    	 "%s o o o o o o o o o \n"
-   	 "%s o o o o o o o o o \n", blank, blank, blank, blank, blank, blank, 
+   	 "%s o o o o o o o o o \n", blank, blank, blank, blank, blank, blank,
 	 blank, blank, blank, blank);
   blank = blank - 10;
 }
