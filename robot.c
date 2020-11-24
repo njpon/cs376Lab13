@@ -34,17 +34,19 @@ void robotPrintMessage(void)
  */
 void robotPrintAscii(void)
 {
-  int i;
-  char* blank = "                              ";
-  blank = blank +30;
-  printf("\n\n"
-	 "UWR: Unidentified Wheeled Robot\n"
-	 "%s    i_i    \n"
-	 "%s   [._.]   \n"
-	 "%s  /|___|\\ \n"
-	 "%s   d   b   \n",blank, blank, blank, blank);
+  for (int i = 0; i < 3; i++) {
+    char* blank = "                              ";
+    blank = blank + 30 - i * 10;
+    printf("\n\n"
+     "UWR: Unidentified Wheeled Robot\n"
+     "%s    i_i    \n"
+     "%s   [._.]   \n"
+     "%s  /|___|\\ \n"
+     "%s   d   b   \n",blank, blank, blank, blank);
 
-  blank = blank - 10;
+    blank = blank - 10;
+  }
+
 }
 
 /**
@@ -58,15 +60,8 @@ void dalekPrintAscii(void)
   blank = blank +30;
   printf("\n\n"
 	 "I am Dalek, from Dr. Who\n"
-<<<<<<< HEAD
-	 "%s      <----->      \n" 
-         "%s     < .   . >     \n"        
-         "%s     |   w   |     \n"
-=======
 	 "%s      <----->      \n"
          "%s     <  (0)  >     \n"
-         "%s     ---------     \n"
->>>>>>> af1049cdcfe7a9cb9451cb6a244c9844101070c1
          "%s    < ------- >    \n"
          "%s    o         o    \n"
          "%s    o  0  ()  o    \n"
